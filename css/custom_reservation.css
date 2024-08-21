@@ -1,0 +1,69 @@
+.menu_frame {
+    width: 80%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.menu_frame iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.menu_sidebar {
+    display: flex ;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    height: 100%;
+    color: #fff !;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 50px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu_sidebar input[type="button"] {
+    width: 280px !important; /* Set all buttons to have the same width */
+    max-width: 400px !important; /* Set a maximum width if needed */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: solid 1px #000000;
+    border-radius: 5px !important;
+    background-color: #28a745; 
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+
+.menu_sidebar input[type="button"]:hover {
+    background-color: #196a2c;
+}
+
+.menu_sidebar input[type="button"] {
+    background-color: #196a2c97;
+}
+
+.menu_sidebar input[type="button"].btn_aquamarine:hover {
+    background-color: #0D79AE;
+}
+
+.menu_sidebar input[type="button"].btn_aquamarine {
+    background-color: #0d78ae97;
+}
+
+.menu_sidebar input[type="button"].btn_red:hover {
+    background-color: #D00000;
+}
+
+

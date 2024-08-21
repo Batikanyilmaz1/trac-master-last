@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<area1 focus="btn_add_traveler">
+		<input id="rb_route1">
+			<condition><![CDATA[$('#inp_route').val() == '']]></condition>
+			<alert>"" seçilmedi!</alert>
+		</input>
+		<input id="inp_identityno">
+			<condition><![CDATA[$('#inp_route').val() == '1' && $('#inp_identityno').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_identityno">
+			<condition><![CDATA[$('#inp_identityno').val() != '' && !identityno_checksum($('#inp_identityno').val())]]></condition>
+			<alert>"" eksik veya geçerli değil!</alert>
+			
+		</input>
+		<input id="inp_name">
+			<condition><![CDATA[$('#inp_name').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_name">
+			<condition><![CDATA[$('#inp_name').val().length < 2]]></condition>
+			<alert>"" en az iki harften oluşmalıdır!</alert>
+			<forced_alert>1</forced_alert>
+		</input>
+		<input id="inp_surname">
+			<condition><![CDATA[$('#inp_surname').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_surname">
+			<condition><![CDATA[$('#inp_surname').val().length < 2]]></condition>
+			<alert>"" en az iki harften oluşmalıdır!</alert>
+			<forced_alert>1</forced_alert>
+		</input>
+		<input id="inp_birthdate">
+			<condition><![CDATA[$('#inp_birthdate').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_birthdate">
+			<condition><![CDATA[$('#inp_birthdate').val().length != 10]]></condition>
+			<alert>"" eksik veya geçerli değil!</alert>
+			<forced_alert>1</forced_alert>
+		</input>
+		<input id="inp_passportno">
+			<condition><![CDATA[$('#inp_route').val() == '2' && $('#inp_passportno').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_phone">
+			<condition><![CDATA[$('#inp_phone').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_phone">
+			<condition><![CDATA[$('#inp_phone').val().replace('_', '').length != 16]]></condition>
+			<alert>"" eksik veya geçerli değil!</alert>
+			<forced_alert>1</forced_alert>
+		</input>
+		<input id="inp_mail">
+			<condition><![CDATA[$('#inp_mail').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_mail">
+			<condition><![CDATA[!$('#inp_mail').val().includes('@') || !$('#inp_mail').val().includes('.')]]></condition>
+			<alert>"" eksik veya geçerli değil!</alert>
+			<forced_alert>1</forced_alert>
+		</input>
+	</area1>
+	<area2 focus="btn_add_request">
+		<input id="sel_from_country">
+			<condition><![CDATA[$('#sel_from_country').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="sel_from_location">
+			<condition><![CDATA[$('#sel_from_location').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_from_city">
+			<condition><![CDATA[$('#inp_from_city').parent().is(':visible') && $('#inp_from_city').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="sel_from_city">
+			<condition><![CDATA[$('#sel_from_city').parent().is(':visible') && $('#sel_from_city').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="sel_to_country">
+			<condition><![CDATA[$('#sel_to_country').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="sel_to_location">
+			<condition><![CDATA[$('#sel_to_location').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_to_city">
+			<condition><![CDATA[$('#inp_to_city').parent().is(':visible') && $('#inp_to_city').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="sel_to_city">
+			<condition><![CDATA[$('#sel_to_city').parent().is(':visible') && $('#sel_to_city').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="sel_travel_reason">
+			<condition><![CDATA[$('#sel_travel_reason').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="rb_trac1">
+			<condition><![CDATA[!$('#rb_trac1').prop('checked') && !$('#rb_trac2').prop('checked') && !$('#rb_trac3').prop('checked')]]></condition>
+			<alert>"Ulaşım ve Konaklama Tercihi" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_departure_date">
+			<condition><![CDATA[$('#inp_departure_date').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="rb_tns1">
+			<condition><![CDATA[!$('#rb_tns1').prop('checked') && !$('#rb_tns2').prop('checked')]]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_transfer_need_detail">
+			<condition><![CDATA[$('#rb_tns1').prop('checked') && $('#inp_transfer_need_detail').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="sel_transportation_mode">
+			<condition><![CDATA[$('#sel_transportation_mode').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="txt_transportation_detail">
+			<condition><![CDATA[$('#inp_route').val() == '1' && $('#inp_how_many_days_to_departure').val() <= 3 && $('#txt_transportation_detail').val() == '']]></condition>
+			<alert>"" boş bırakılamaz! Seyahat Tarihine 3 ya da daha az gün kaldığı için nedenini belirtmelisiniz.</alert>
+		</input>
+		<input id="txt_transportation_detail">
+			<condition><![CDATA[$('#inp_route').val() == '2' && $('#inp_how_many_days_to_departure').val() <= 5 && $('#txt_transportation_detail').val() == '']]></condition>
+			<alert>"" boş bırakılamaz! Seyahat Tarihine 5 ya da daha az gün kaldığı için nedenini belirtmelisiniz.</alert>
+		</input>
+		<input id="inp_check-in_date">
+			<condition><![CDATA[$('#inp_check-in_date').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+	</area2>
+	<area3 focus="btn_add_reservation">
+		<input id="sel_requestid">
+			<condition><![CDATA[$('#sel_requestid').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="sel_departure_transportation_mode">
+			<condition><![CDATA[$('#sel_departure_transportation_mode').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_departure_port">
+			<condition><![CDATA[$('#inp_departure_port').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_departure_company">
+			<condition><![CDATA[$('#inp_departure_company').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_departure_pnr_code">
+			<condition><![CDATA[$('#inp_departure_pnr_code').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_departure_ticket_number">
+			<condition><![CDATA[$('#inp_departure_ticket_number').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_departure_car_license_plate">
+			<condition><![CDATA[$('#inp_departure_car_license_plate').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_departure_date">
+			<condition><![CDATA[$('#inp_departure_date').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="sel_return_transportation_mode">
+			<condition><![CDATA[$('#sel_return_transportation_mode').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_return_port">
+			<condition><![CDATA[$('#inp_return_port').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_return_company">
+			<condition><![CDATA[$('#inp_return_company').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_return_pnr_code">
+			<condition><![CDATA[$('#inp_return_pnr_code').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_return_ticket_number">
+			<condition><![CDATA[$('#inp_return_ticket_number').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_return_car_license_plate">
+			<condition><![CDATA[$('#inp_return_car_license_plate').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_return_date">
+			<condition><![CDATA[$('#inp_return_date').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_check-in_date">
+			<condition><![CDATA[$('#iinp_check-in_date').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_check-out_date">
+			<condition><![CDATA[$('#inp_check-out_date').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+		<input id="inp_hotel_name">
+			<condition><![CDATA[$('#inp_hotel_name').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+	</area3>
+	<area4 focus="btn_ok">
+		<input id="txt_explanation">
+			<condition><![CDATA[$('#txt_explanation').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+	</area4>
+	<area5 focus="btn_ok">
+		<input id="txt_explanation">
+			<condition><![CDATA[$('#txt_explanation').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+	</area5>
+	<area6 focus="btn_ok">
+		<input id="txt_explanation">
+			<condition><![CDATA[$('#txt_explanation').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+	</area6>
+    <area7 focus="btn_ok">
+		<input id="txt_explanation">
+			<condition><![CDATA[$('#txt_explanation').val() == '']]></condition>
+			<alert>"" boş bırakılamaz!</alert>
+		</input>
+	</area7>
+</form>
