@@ -1,6 +1,5 @@
 <?php
 	require("./library.php");
-//	header("Location: ./login.php");
 ?>
 <!doctype HTML 4.01 Transitional>
 <html xmlns="http://www.w3.org/2001/XMLSchema">
@@ -108,12 +107,11 @@
         <!-- System Name and Logo on the Right -->
         <div style="display: flex; align-items: center;">
             <h1 style="margin: 0; font-size: 18px; font-weight: 400; color: #ffffff; margin-right: 20px;">Ulaşım ve Konaklama - Rezervasyon Sistemi</h1>
-            <img src="./images/logo.png" alt="Logo" style="height: 50px;" />
+            <img src="./images/logo.png" alt="Logo" class="nav_logo" />
         </div>
     </div>
 </nav>
     
-
 
     
     <div id="st-container" class="st-container">
@@ -134,6 +132,13 @@
                     <input type="button" class="btn_blue" value="Rezervasyonlarım" onClick="load_page($(this), 'iframe_page3', './reservation_list.php?list_type=1');" />
                     <div id="div_menu_arrow3" class="menu_arrow_pasive">⮞</div>
                 </div>
+
+                <!--
+                <div>
+                    <input type="button" class="btn_blue" value="Test" onClick="load_page($(this), 'iframe_page3', './test.html?list_type=1');" />
+                    <div id="div_menu_arrow3" class="menu_arrow_pasive">⮞</div>
+                </div>
+    -->
                 <?php	if($_SESSION['executive_person']) { ?>
                 <div>
                     <input type="button" class="btn_aquamarine" value="Yeni Rezervasyon Oluştur" onClick="load_page($(this), 'iframe_page4', './reservation_entry_form.php');" />
@@ -217,7 +222,7 @@
             <!-- Grid column -->
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
               <h6 class="text-uppercase mb-4 font-weight-bold">
-                Company name
+                MLPCare
               </h6>
               <p>
                 Here you can use rows and columns to organize your footer
@@ -236,11 +241,11 @@
   
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-              <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-              <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              <h6 class="text-uppercase mb-4 font-weight-bold">İletişim</h6>
+              <p><i class="fas fa-home mr-3"></i> Flatofis, Haliç Otakçılar Cad. No: 78 PK: 34050 Eyüp / İSTANBUL</p>
+              <p><i class="fas fa-envelope mr-3"></i> destek@mlpcare.com</p>
+              <p><i class="fas fa-phone mr-3"></i> +90 212 227 55 55</p>
+              <!-- <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p> -->
             </div>
             <!-- Grid column -->
   
@@ -248,30 +253,30 @@
             <!-- Follow us section -->
                 <!-- Follow us section -->
 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-  <h6 class="text-uppercase mb-4 fw-bold text-center">Follow us</h6>
+  <h6 class="text-uppercase mb-4 fw-bold text-center">Bizi Takip Et</h6>
   <div class="d-flex justify-content-center">
     <!-- Facebook -->
-    <a class="btn btn-primary btn-floating m-1 d-flex justify-content-center align-items-center" style="background-color: #3b5998; border-radius: 50%; width: 40px; height: 40px;" href="#!" role="button">
+    <a class="btn btn-primary btn-floating m-1 d-flex justify-content-center align-items-center" style="background-color: #3b5998; border-radius: 50%; width: 50px; height: 40px;" href="https://www.facebook.com/mlpcare/" role="button">
       <i class="fab fa-facebook-f"></i>
     </a>
 
     <!-- Twitter -->
-    <a class="btn btn-primary btn-floating m-1 d-flex justify-content-center align-items-center" style="background-color: #55acee; border-radius: 50%; width: 40px; height: 40px;" href="#!" role="button">
+    <a class="btn btn-primary btn-floating m-1 d-flex justify-content-center align-items-center" style="background-color: #55acee; border-radius: 50%; width: 40px; height: 40px;" href="https://x.com/mlpcare" role="button">
       <i class="fab fa-twitter"></i>
     </a>
 
-    <!-- Google -->
+    <!-- Google
     <a class="btn btn-primary btn-floating m-1 d-flex justify-content-center align-items-center" style="background-color: #dd4b39; border-radius: 50%; width: 40px; height: 40px;" href="#!" role="button">
       <i class="fab fa-google"></i>
     </a>
-
+ -->
     <!-- Instagram -->
-    <a class="btn btn-primary btn-floating m-1 d-flex justify-content-center align-items-center" style="background-color: #ac2bac; border-radius: 50%; width: 40px; height: 40px;" href="#!" role="button">
+    <a class="btn btn-primary btn-floating m-1 d-flex justify-content-center align-items-center" style="background-color: #ac2bac; border-radius: 50%; width: 40px; height: 40px;" href="https://www.instagram.com/mlpcare/?hl=en" role="button">
       <i class="fab fa-instagram"></i>
     </a>
 
     <!-- Linkedin -->
-    <a class="btn btn-primary btn-floating m-1 d-flex justify-content-center align-items-center" style="background-color: #0082ca; border-radius: 50%; width: 40px; height: 40px;" href="#!" role="button">
+    <a class="btn btn-primary btn-floating m-1 d-flex justify-content-center align-items-center" style="background-color: #0082ca; border-radius: 50%; width: 40px; height: 40px;" href="https://www.linkedin.com/company/mlpcare/posts" role="button">
       <i class="fab fa-linkedin-in"></i>
     </a>
 
@@ -293,7 +298,7 @@
            >
         © 2024 Copyright:
         <a class="text-white" href=""
-           >MLPCare.com</a
+           >www.mlpcare.com</a
           >
       </div>
       <!-- Copyright -->

@@ -62,9 +62,9 @@
         <div class="box">
 
             <div class="form">
-                <img src="images/_user.jpg" class="user" alt="">
+                <img src="images/logo.png" class="user" alt="">
                 <h2>Hoş Geldiniz!</h2>
-                <form class="" action="index.html" method="post" enctype="multipart/form-data">
+                <form class="" action="" method="post" enctype="multipart/form-data">
                     <!-- {% csrf_token %} -->
                     <div class="inputBx">
                         <input type="text" name="username" placeholder="Username" id="username" oninput="validation()" required autofocus>
@@ -76,7 +76,7 @@
                     </div>
                     <label class="remeber"><input type="checkbox"> Beni Hatırla</label>
                     <div class="inputBx">
-                        <input type="submit" name="submit" value="Giriş" id="btn_login" onClick="login();" disabled>
+                        <input type="button" name="submit" value="Giriş" id="btn_login" onClick="login();" disabled>
                     </div>
                 </form>
                 <p> <a href="#">Şifremi Unuttum</a>!</p>

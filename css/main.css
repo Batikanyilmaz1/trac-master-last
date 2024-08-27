@@ -68,6 +68,13 @@ background-color: #0054ae;
     display: block;
 }
 
+.nav_logo {
+	height: 50px;
+	border-radius: 300px !important;
+	outline: solid 1px gray;
+
+}
+
 body {
 	margin: 0px;
 	/* background-color: whitesmoke;
@@ -94,8 +101,7 @@ input:focus, select:focus, textarea:focus {
     justify-content: center; /* centers horizontally */
     align-items: center; /* centers vertically */
     height: 100%; /* sets the container height to full viewport height */
-	width: 100%;
-	
+	width: 100%;;
 }
 
 
@@ -134,9 +140,6 @@ iframe {
 	height: 100%;
 	position: relative;
 	overflow: auto;
-
-
-
 }
 .menu_arrow_pasive {
 	display: none;

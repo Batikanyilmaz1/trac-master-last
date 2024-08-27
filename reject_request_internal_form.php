@@ -38,7 +38,7 @@
 	</div>
 	<div id="div_completion_page<?php echo $index; ?>" align="center" hidden>
 		<div style="height: 5px;"></div>
-		<div style="border: solid 1px red; border-radius: 2px; background-color: seashell;">
+		<div style="border: solid 1px rgb(0, 0, 0); border-radius: 2px; background-color: #0d78ae97;">
 			<div style="height: 20px;"></div>
 			<div><img src="images/ok.png" width="50" /></div>
 			<div style="height: 20px;"></div>
