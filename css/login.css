@@ -166,7 +166,7 @@ input::-webkit-input-placeholder {
 }
 
 
-.box .form .inputBx input[type="submit"] {
+.box .form .inputBx input[type="button"] {
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     max-width: 150px;
@@ -177,7 +177,7 @@ input::-webkit-input-placeholder {
     font-size: 14px;
 }
 
-.box .form .inputBx input[type="submit"]:disabled {
+.box .form .inputBx input[type="button"]:disabled {
     background: rgb(175, 175, 175);
     color: rgb(116, 116, 116);
     max-width: 150px;
