@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="./css/main.css" /> <!--new -->
 <?php
 	require("./library.php");
 
@@ -14,15 +15,15 @@
         <div id="div_save_buttons" align="right">
             <div style="display: flex; width: 300px;">
                 <div>
-                    <input type="button" id="btn_cancel" class="btn" value="İptal ✖" onClick="cancel_reservation();" />
+                    <input type="button" id="btn_cancel" class="btn_red" value="İptal ✖" onClick="cancel_reservation();" />
                 </div>
                 <div style="width: 15px;"></div>
                 <div>
-                    <input type="button" id="btn_edit" class="btn" value="Düzenle ✎" onClick="toggle_visibility([$('#div_form_page')], [$('#div_approve_page')]);" />
+                    <input type="button" id="btn_edit" class="btn_edit" value="Düzenle ✎" onClick="toggle_visibility([$('#div_form_page')], [$('#div_approve_page')]);" />
                 </div>
                 <div style="width: 15px;"></div>
                 <div>
-                    <input type="button" id="btn_approve" class="btn" value="Onayla ✔" onClick="save_reservation();" />
+                    <input type="button" id="btn_approve" class="btn_green" value="Onayla ✔" onClick="save_reservation();" />
                 </div>
             </div>
         </div>

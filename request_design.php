@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="./css/main.css" /> <!--new -->
+
 <?php   $mail_view = $_GET['mail_view'] ?? '0'; ?>
 <?php	if(($list_type == '1' || $list_type == '2') && $mail_view == '0') { ?>
     <div id="div_row_frame_<?php echo $i; ?>" class="row<?php echo ($i % 2) + 1; ?>">
@@ -8,8 +10,8 @@
             <div class="row_title" style="display: flex;">
                 <div align="left">
                     <div class="databox1" style="width: 1px;">
-                        <div class="databox_label1" style="border-left: solid 1px red; border-right: none;"></div>
-                        <div class="databox_value1" style="border-left: solid 1px green; border-right: none;"></div>
+                        <div class="databox_label1" ></div>
+                        <div class="databox_value1"></div>
                     </div>
                 </div>
 <?php	if($list_type != '0') { ?>
@@ -275,7 +277,7 @@
                             <div style="display: flex; justify-content: flex-start;">
 <?php		if($request['STATUS_ID'] == '14' && $mail_view == '0') { ?>
                                 <div>
-                                    <input type="button" id="btn_reservation_detail" index="<?php echo $i; ?>" reservationid="<?php echo $request['RESERVATION_ID']; ?>" class="btn_blue" style="width: 220px;" value="Rezervasyon Detaylarını Göster  &#128065;" onClick="toggle_reservation_detail($(this));" />
+                                    <input type="button" id="btn_reservation_detail" index="<?php echo $i; ?>" reservationid="<?php echo $request['RESERVATION_ID']; ?>" class="btn" style="width: 220px;" value="Rezervasyon Detaylarını Göster  &#128065;" onClick="toggle_reservation_detail($(this));" />
                                 </div>
 <?php		} ?>
                             </div>
@@ -291,7 +293,7 @@
                                 </div>
                                 <div style="width: 15px;"></div>
                                 <div>
-                                    <input type="button" id="btn_revise" index="<?php echo $i; ?>" requestid="<?php echo $request['ID']; ?>" class="btn_yellow" value="Revize  ✎" onclick="open_manager_process($(this), '<?php echo $_SESSION['user_uuid'] . '-' . $request['REQ_UUID'] . '-' . $request['RAD_UUID']; ?>', 'revise');" />
+                                    <input type="button" id="btn_revise" index="<?php echo $i; ?>" requestid="<?php echo $request['ID']; ?>" class="btn_edit" value="Revize  ✎" onclick="open_manager_process($(this), '<?php echo $_SESSION['user_uuid'] . '-' . $request['REQ_UUID'] . '-' . $request['RAD_UUID']; ?>', 'revise');" />
                                 </div>
                                 <div style="width: 15px;"></div>
                                 <div>
@@ -304,7 +306,7 @@
                                 </div>
                                 <div style="width: 15px;"></div>
                                 <div>
-                                    <a href="<?php echo $revise_link; ?>" target="_blank"><input type="button" id="btn_revise" class="btn_yellow" value="Revize  ✎" /></a>
+                                    <a href="<?php echo $revise_link; ?>" target="_blank"><input type="button" id="btn_revise" class="btn_edit" value="Revize  ✎" /></a>
                                 </div>
                                 <div style="width: 15px;"></div>
                                 <div>

@@ -14,6 +14,7 @@
 		exit;
 	}
 ?>
+<link rel="stylesheet" type="text/css" href="./css/main.css" /> <!--new -->
 	<div id="div_form_page<?php echo $index; ?>" align="center">
 		<div hidden>
 			<input type="hidden" id="inp_user_uuid" name="inp_user_uuid" value="<?php echo $user_uuid; ?>" />

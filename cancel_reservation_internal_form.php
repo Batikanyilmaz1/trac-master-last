@@ -1,4 +1,4 @@
-,<?php
+<?php
 	require("./library.php");
 
 	$index = $_GET['index'] ?? '';
@@ -9,6 +9,7 @@
 		exit;
 	}
 ?>
+<link rel="stylesheet" type="text/css" href="./css/main.css" /> <!--new -->
 	<div id="div_form_page<?php echo $index; ?>" align="center">
 		<div hidden>
 			<input type="hidden" id="inp_reservation_id" name="inp_reservation_id" value="<?php echo $reservationid; ?>" />
@@ -20,11 +21,11 @@
 		<div align="right">
 			<div style="display: flex; width: 195px;">
 				<div>
-					<input type="button" id="btn_close<?php echo $index; ?>" index="<?php echo $index; ?>" class="btn" value="Geri ⮝" onClick="close_manager_process($(this));" />
+					<input type="button" id="btn_close<?php echo $index; ?>" index="<?php echo $index; ?>" class="btn_red" value="Geri ⮝" onClick="close_manager_process($(this));" />
 				</div>
 				<div style="width: 15px;"></div>
 				<div>
-					<input type="button" id="btn_ok<?php echo $index; ?>" index="<?php echo $index; ?>" reservationid="<?php echo $reservationid; ?>" area="area7" action="warn" class="btn" value="Tamam ✔" onClick="cancel_reservation($(this));" />
+					<input type="button" id="btn_ok<?php echo $index; ?>" index="<?php echo $index; ?>" reservationid="<?php echo $reservationid; ?>" area="area7" action="warn" class="btn_green" value="Tamam ✔" onClick="cancel_reservation($(this));" />
 				</div>
 			</div>
 		</div>

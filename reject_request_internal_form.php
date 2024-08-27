@@ -14,6 +14,8 @@
 		exit;
 	}
 ?>
+
+<link rel="stylesheet" type="text/css" href="./css/main.css" /> <!--new -->
 	<div id="div_form_page<?php echo $index; ?>" align="center">
 		<div hidden>
 			<input type="hidden" id="inp_user_uuid" name="inp_user_uuid" value="<?php echo $user_uuid; ?>" />
@@ -27,11 +29,11 @@
 		<div align="right">
 			<div style="display: flex; width: 195px;">
 				<div>
-					<input type="button" id="btn_close<?php echo $index; ?>" index="<?php echo $index; ?>" class="btn" value="Geri ⮝" onClick="close_manager_process($(this));" />
+					<input type="button" id="btn_close<?php echo $index; ?>" index="<?php echo $index; ?>" class="btn_red" value="Geri ⮝" onClick="close_manager_process($(this));" />
 				</div>
 				<div style="width: 15px;"></div>
 				<div>
-					<input type="button" id="btn_ok<?php echo $index; ?>" index="<?php echo $index; ?>" requestid="<?php echo $requestid; ?>" area="area5" action="warn" class="btn" value="Tamam ✔" onClick="reject_request($(this));" />
+					<input type="button" id="btn_ok<?php echo $index; ?>" index="<?php echo $index; ?>" requestid="<?php echo $requestid; ?>" area="area5" action="warn" class="btn_green" value="Tamam ✔" onClick="reject_request($(this));" />
 				</div>
 			</div>
 		</div>

@@ -101,7 +101,7 @@ input:focus, select:focus, textarea:focus {
     justify-content: center; /* centers horizontally */
     align-items: center; /* centers vertically */
     height: 100%; /* sets the container height to full viewport height */
-	width: 100%;;
+	width: 100%;
 }
 
 
@@ -230,7 +230,7 @@ iframe {
 	padding-top: 4px;
 	border: solid 1px black;
 }
-.btn, .btn_gray, .btn_green, .btn_yellow, .btn_red, .btn_blue, .btn_aquamarine, .btn_cikis  {
+.btn, .btn_gray, .btn_green, .btn_yellow, .btn_red, .btn_blue, .btn_aquamarine, .btn_cikis, .btn_edit  {
 	width: 90px;
 	height: 30px;
 	font-size: 12px;
@@ -252,6 +252,19 @@ iframe {
 	color: gray;
 	border-color: gray !important;
 	background-color: #E7E7E7;
+}
+
+.btn_edit {
+	color: white;
+	background-color: #0d78ae97;
+	font-weight: bolder !important; 
+	font-size: 14px;
+}
+.btn_edit:hover {
+	background-color: #004288;
+}
+.btn_edit:active {
+	background-color: #004288;
 }
 
 .btn_green {
@@ -451,7 +464,7 @@ iframe {
 	height: 17px;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
-	border-bottom-color: blue;
+	border-bottom-color: #0d78ae97;
 	text-align: left;
 	font-weight: bold;
 }
@@ -468,26 +481,26 @@ iframe {
 .databox_label1 {
 	height: 50%;
 	font-weight: bold;
-	color: #0E0E76;
-	border: solid 1px red;
+	color: #000000;
+	border: solid 1px rgb(255, 255, 255);
 	border-left: none;
 	padding-left: 5px;
 	padding-top: 4px;
-	background-color: #FFDFDF;
+	background-color: #0d78ae97;
 }
 .databox_label2 {
 	width: 40%;
 	font-weight: bold;
-	color: #0E0E76;
-	border: solid 1px red;
+	color: #000000;
+	border: solid 1px #0D79AE;
 	border-top: none;
 	padding-left: 5px;
 	padding-top: 4px;
-	background-color: #FFDFDF;
+	background-color: #E7E7E7;
 }
 .databox_value1 {
 	height: 50%;
-	border: solid 1px green;
+	border: solid 1px #0D79AE;
 	border-left: none;
 	border-top: none;
 	padding-left: 5px;
@@ -495,7 +508,7 @@ iframe {
 }
 .databox_value2 {
 	width: 60%;
-	border: solid 1px green;
+	border: solid 1px #0D79AE;
 	border-top: none;
 	border-left: none;
 	padding-left: 5px;
@@ -514,7 +527,7 @@ iframe {
 .lbl_alrt1 {
 	font-weight: bold;
 	margin-top: 7px;
-	color: red;
+	color: rgb(0, 0, 0);
 	animation: blinker 0.9s linear infinite;
 }
 .lbl_alrt2 {
@@ -539,7 +552,7 @@ iframe {
 }
 .trv_tbl1, .trv_tbl2, .a_trv_tbl {
 	font-size: 12px;
-	color: #0E0E76;
+	color: rgb(0, 0, 0);
 	border-spacing: 0px;
 	border-width: 1px;
 	border-style: solid;
@@ -556,13 +569,13 @@ iframe {
 	border-color: #FF6700;
 }
 .a_trv_tbl {
-	border-color: blue;
+	border-color: rgb(0, 0, 0);
 }
 .trv_thead {
 	text-align: center;
-	background: #CAFEFF;
+	background: #0d78ae97;
 	font-weight: bold;
-	color: #0E0E76;
+	color: #000000;
 }
 .trv_tbody {
 	background: #FFFFFF;
@@ -586,11 +599,11 @@ iframe {
 }
 .a_trv_cell_th {
 	text-align: center;
-	border-color: blue;
+	border-color: #0D79AE;
 }
 .a_trv_cell_tb {
 	text-align: left;
-	border-color: blue;
+	border-color: #0D79AE;
 }
 .trv_cell_img {
 	height: 20px;
@@ -600,7 +613,7 @@ iframe {
 	width: 90%;
 	padding-left: 5%;
 	padding-right: 5%;
-	border: solid 1px red;
+	border: solid 1px rgb(0, 0, 0);
 	border-radius: 5px;
 	font-size: 13px;
 /*	color: #0E0E76; */
@@ -608,24 +621,28 @@ iframe {
 	justify-content: center;
 }
 .row1 {
-	background-color: #FFF2EF;
+	background-color: rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter: blur(20px) !important;
+/*	background-color: #ffffff; */
 /*	background: url('../images/body_1.png');*/
 }
 .row2 {
-	background-color: #FFE7D7;
+	background-color: rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter: blur(20px) !important;
+/*	background-color: #FFE7D7; */
 /*	background: url('../images/body_2.png');*/
 }
 .row_title {
 	height: 51px;
 	border: solid 1px transparent;
 }
-.row_title:hover {
-	border: solid 1px red;
-	background-color: #D2FCFF;
+.row_title:hover { /* title */
+	border: solid 1px black;
+	background-color: #DCDCDC;
 }
 .row_title:active {
-	border: solid 1px blue;
-	background-color: #D6FFD2;
+	border: solid 1px black;
+	background-color: #F1F1F1;
 }
 .remote_button_up, .remote_button_expand, .remote_button_collapse {
 	width: 30px;
