@@ -713,7 +713,7 @@
                         <div style="height: 10px;"></div>
                         <div style="display: flex; width: 90px; height: 38px;">
                             <div>
-                                <input type="button" id="btn_add_reservation" area="area3" action="warn" class="btn" value="Kaydet ⮟" onClick="add_reservation($(this));" />
+                                <input type="button" id="btn_add_reservation" area="area3" action="warn" class="btn_blue" value="Kaydet ⮟" onClick="add_reservation($(this));" />
                             </div>
                         </div>
                     </div>

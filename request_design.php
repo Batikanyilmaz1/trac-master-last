@@ -293,7 +293,7 @@
                                 </div>
                                 <div style="width: 15px;"></div>
                                 <div>
-                                    <input type="button" id="btn_revise" index="<?php echo $i; ?>" requestid="<?php echo $request['ID']; ?>" class="btn_edit" value="Revize  ✎" onclick="open_manager_process($(this), '<?php echo $_SESSION['user_uuid'] . '-' . $request['REQ_UUID'] . '-' . $request['RAD_UUID']; ?>', 'revise');" />
+                                    <input type="button" id="btn_revise" index="<?php echo $i; ?>" requestid="<?php echo $request['ID']; ?>" class="btn_yellow" value="Revize  ✎" onclick="open_manager_process($(this), '<?php echo $_SESSION['user_uuid'] . '-' . $request['REQ_UUID'] . '-' . $request['RAD_UUID']; ?>', 'revise');" />
                                 </div>
                                 <div style="width: 15px;"></div>
                                 <div>
@@ -306,7 +306,7 @@
                                 </div>
                                 <div style="width: 15px;"></div>
                                 <div>
-                                    <a href="<?php echo $revise_link; ?>" target="_blank"><input type="button" id="btn_revise" class="btn_edit" value="Revize  ✎" /></a>
+                                    <a href="<?php echo $revise_link; ?>" target="_blank"><input type="button" id="btn_revise" class="btn_yellow" value="Revize  ✎" /></a>
                                 </div>
                                 <div style="width: 15px;"></div>
                                 <div>

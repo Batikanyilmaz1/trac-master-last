@@ -15,7 +15,7 @@ body,
 
 .st-content {
 	overflow-y: scroll;
-	background: #f3efe0;
+	background: #ffffff; /* f3efe0 */
 }
 
 .st-content,
@@ -114,7 +114,7 @@ body,
 	padding: 1em 1em 1em 1.2em;
 	outline: none;
 	box-shadow: inset 0 -1px rgba(0,0,0,0.2);
-	color: #f3efe0;
+	color: #ffffff;
 	text-transform: uppercase;
 	text-shadow: 0 0 1px rgba(255,255,255,0.1);
 	letter-spacing: 1px;

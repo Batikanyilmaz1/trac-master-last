@@ -1485,7 +1485,7 @@
                         <div style="height: 10px;"></div>
                         <div style="display: flex; height: 38px;">
                             <div align="right" style="width: 100%;">
-                                <input type="button" id="btn_add_request" area="area2" action="warn" class="btn" value="Kaydet ⮟" onClick="add_request($(this));" />
+                                <input type="button" id="btn_add_request" area="area2" action="warn" class="btn_blue" value="Kaydet ⮟" onClick="add_request($(this));" />
                             </div>
                         </div>
                     </div>

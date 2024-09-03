@@ -1,4 +1,6 @@
-<?php   $mail_view = $_GET['mail_view'] ?? '0'; ?>
+<link rel="stylesheet" type="text/css" href="./css/main.css" /> <!--new -->
+
+<?php   $mail_view = $_GET['mail_view'] ?? '0'; ?
 <?php	if(($list_type == '1' || $list_type == '2') && $mail_view == '0') { ?>
     <div id="div_row_frame_<?php echo $i; ?>" class="row<?php echo ($i % 2) + 1; ?>">
         <div style="height: 10px;"></div>
@@ -249,7 +251,7 @@
                         <div style="width: 50%;">
                             <div style="display: flex; justify-content: flex-end;">
                                 <div>
-                                    <input type="button" id="btn_cancel" index="<?php echo $i; ?>" reservationid="<?php echo $reservation['ID']; ?>" class="btn_red" style="width: 190px;" value="Rezervasyonu İptal Et  ✖" onclick="open_manager_process($(this));" />
+                                    <input type="button" class="btn_red" id="btn_cancel" index="<?php echo $i; ?>" reservationid="<?php echo $reservation['ID']; ?>"  style="width: 190px;" value="Rezervasyonu İptal Et  ✖" onclick="open_manager_process($(this));" />
                                 </div>
                             </div>
                         </div>

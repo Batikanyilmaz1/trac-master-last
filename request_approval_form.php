@@ -21,7 +21,7 @@
                 </div>
                 <div style="width: 15px;"></div>
                 <div>
-                    <input type="button" id="btn_edit" class="btn_edit" value="Düzenle ✎" onClick="toggle_visibility([$('#div_form_page')], [$('#div_approve_page')]);" />
+                    <input type="button" id="btn_edit" class="btn_yellow" value="Düzenle ✎" onClick="toggle_visibility([$('#div_form_page')], [$('#div_approve_page')]);" />
                 </div>
                 <div style="width: 15px;"></div>
                 <div>

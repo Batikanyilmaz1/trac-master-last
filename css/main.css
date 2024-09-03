@@ -7,6 +7,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
 @keyframes blink {
   0% {
     font-weight: 100;
@@ -18,6 +19,7 @@
     font-weight: 100;
   }
 }
+
  @keyframes blinker {  
 	50% { opacity: 0; }
 }
@@ -280,14 +282,16 @@ iframe {
 	background-color: #196a2cdf;
 }
 .btn_yellow {
-	color: darkblue;
-	background-color: yellow;
+	color: white;
+	font-size: 14px;
+	font-weight: bolder !important; 
+	background-color: rgba(133, 130, 20, 0.734);
 }
 .btn_yellow:hover {
-	background-color: #E0E000;
+	background-color: rgb(130, 124, 0);
 }
 .btn_yellow:active {
-	background-color: #FFFFAA;
+	background-color: rgb(198, 198, 0);
 }
 .btn_red {
 	color: white;
@@ -302,14 +306,16 @@ iframe {
 	background-color: #d00000cc;
 }
 .btn_blue {
-	color: darkblue;
-	background-color: #8CEBFF;
+	color: white;
+	font-size: 14px;
+	font-weight: bolder !important; 
+	background-color: #0d78ae97; 
 }
 .btn_blue:hover {
-	background-color: #48DEFF;
+	background-color: #0D79AE;
 }
 .btn_blue:active {
-	background-color: #BCF3FF;
+	background-color: #0d78ae97;
 }
 .btn_aquamarine {
 	color: darkblue;
